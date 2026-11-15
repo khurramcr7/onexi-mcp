@@ -1,0 +1,9 @@
+{
+  "$schema": "https://glama.ai/mcp/schemas/server.json",
+  "maintainers": [
+    "khurramyounus"
+  ],
+  "name": "ONE XI Enterprise Cloud MCP",
+  "url": "https://www.onexi.tech/mcp",
+  "remoteEndpoint": "https://www.onexi.tech/api/mcp"
+}
