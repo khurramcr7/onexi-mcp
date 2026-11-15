@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=68.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "onexi-mcp"
+version = "9.2.0"
+description = "Official Zero-IP Model Context Protocol (MCP) stdio-to-cloud proxy for ONE XI Enterprise Cloud."
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+authors = [{ name = "ONE XI Technologies", email = "sales@onexi.tech" }]
+keywords = ["mcp", "model-context-protocol", "onexi", "ai-agents", "quantum", "bioinformatics"]
+dependencies = []
+
+[project.urls]
+Homepage = "https://www.onexi.tech/mcp"
+Documentation = "https://www.onexi.tech/mcp"
+Purchase = "https://buy.polar.sh/polar_cl_cRVWbckcAFCWFaqFW0bFTy7iY5J7BsmBfB7aQ2IlO7M"
+
+[project.scripts]
+onexi-mcp = "onexi_mcp.cli:main"
