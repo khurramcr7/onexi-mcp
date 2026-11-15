@@ -30,13 +30,14 @@ if (argv.includes("--help") || argv.includes("-h")) {
 }
 
 let sessionHeader = "";
+let requestQueue = Promise.resolve();
 
 const rl = readline.createInterface({
   input: process.stdin,
   crlfDelay: Infinity,
 });
 
-rl.on("line", async (line) => {
+async function handleRpcLine(line) {
   const trimmed = line.trim();
   if (!trimmed) return;
 
@@ -81,4 +82,9 @@ rl.on("line", async (line) => {
       );
     }
   }
+}
+
+rl.on("line", (line) => {
+  requestQueue = requestQueue.then(() => handleRpcLine(line));
 });
+
