@@ -1,0 +1,60 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-10-17/server.schema.json",
+  "name": "io.github.khurramcr7/onexi-mcp",
+  "title": "ONE XI Enterprise Cloud MCP Server",
+  "description": "12 deterministic suites across Clinical RUO, Proteomics, Quantum, Code Sandbox, Science & Classical Arabic.",
+  "version": "9.2.0",
+  "websiteUrl": "https://www.onexi.tech/mcp",
+  "repository": {
+    "url": "https://github.com/khurramcr7/onexi-mcp",
+    "source": "github"
+  },
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://www.onexi.tech/api/mcp",
+      "headers": [
+        {
+          "name": "Authorization",
+          "description": "Optional for 15 free calls/day; Bearer <KEY> from https://www.onexi.tech/mcp ($29/mo MCP Pro) unlocks all 12 suites.",
+          "isRequired": false,
+          "isSecret": true
+        }
+      ]
+    }
+  ],
+  "packages": [
+    {
+      "registryType": "npm",
+      "identifier": "@onexi/mcp-server",
+      "version": "9.2.0",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [
+        {
+          "name": "ONE_MCP_API_KEY",
+          "description": "ONE XI MCP Pro ($29/mo) or Cloud API key from https://www.onexi.tech/mcp",
+          "isRequired": false,
+          "isSecret": true
+        }
+      ]
+    },
+    {
+      "registryType": "pypi",
+      "identifier": "onexi-mcp",
+      "version": "9.2.0",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [
+        {
+          "name": "ONE_MCP_API_KEY",
+          "description": "ONE XI MCP Pro ($29/mo) or Cloud API key from https://www.onexi.tech/mcp",
+          "isRequired": false,
+          "isSecret": true
+        }
+      ]
+    }
+  ]
+}
