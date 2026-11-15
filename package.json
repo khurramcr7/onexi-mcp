@@ -1,0 +1,35 @@
+{
+  "name": "@onexi/mcp-server",
+  "version": "9.2.0",
+  "mcpName": "io.github.khurramcr7/onexi-mcp",
+  "description": "Official Zero-IP Model Context Protocol (MCP) stdio-to-cloud proxy for ONE XI Enterprise Cloud (12 verified suites across Clinical RUO, Proteomics, Quantum, Code Sandbox, Science & Classical Arabic).",
+  "license": "MIT",
+  "homepage": "https://www.onexi.tech/mcp",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/khurramcr7/onexi-mcp.git"
+  },
+  "bin": {
+    "onexi-mcp": "./bin/onexi-mcp.js",
+    "onexi-mcp-server": "./bin/onexi-mcp.js"
+  },
+  "files": [
+    "bin/",
+    "README.md"
+  ],
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "onexi",
+    "claude",
+    "cursor",
+    "antigravity",
+    "quantum",
+    "bioinformatics",
+    "quran",
+    "hadith"
+  ]
+}
