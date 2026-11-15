@@ -1,0 +1,16 @@
+# Smithery.ai Commercial MCP Configuration
+startCommand:
+  type: stdio
+  configSchema:
+    type: object
+    properties:
+      onexiApiKey:
+        type: string
+        title: ONE XI MCP API Key
+        description: Optional for 15 free starter calls/day. Subscribe to ONE XI MCP Pro ($29/mo) at https://www.onexi.tech/mcp to unlock all 12 suites.
+  commandFunction: |-
+    (config) => ({
+      command: 'node',
+      args: ['bin/onexi-mcp.js'],
+      env: config.onexiApiKey ? { ONE_MCP_API_KEY: config.onexiApiKey } : {}
+    })
