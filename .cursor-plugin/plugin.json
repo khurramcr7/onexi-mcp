@@ -1,0 +1,12 @@
+{
+  "name": "onexi-mcp",
+  "displayName": "ONE XI™ Enterprise Cloud MCP",
+  "version": "9.2.0",
+  "description": "12 deterministic MCP suites across Claim Verification, Cardiovascular RUO, Proteomics, Fault-Tolerant Quantum Compilation, Code Sandbox, Science & Classical Arabic.",
+  "homepage": "https://www.onexi.tech/mcp",
+  "mcpServers": {
+    "onexi-mcp": {
+      "url": "https://www.onexi.tech/api/mcp"
+    }
+  }
+}
